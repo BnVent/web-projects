@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.classicgaming.cc/classics/pac-man/images/icons/pixel-pac-man.ico">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@800&display=swap" rel="stylesheet"> 
+    <title>Retrogaming Survey Form</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Retrogaming Survey Form</h1>
+        <p id="description">Tell us about your retro-gaming experience!</p>
+        <form id="form">
+            <p><sup>* </sup>Name: </p><label for="name"><input name="name" id="name" type="text"   placeholder="Enter your name" required></label>
+            <p><sup>* </sup>Email: </p><label for="email"><input type="email" id="email" name="email" placeholder="Enter your Email" required></label>
+            <p><sup>* </sup>Age: </p><label for="age"><input id="age" type="number" name="age" min="10" max="99" placeholder="10" required></label>
+
+            <p><sup>* </sup>Choose your gender: </p>
+            <label for="masc"><input type="radio" value="masc" name="gender" id="masc" checked> Masc.</label>
+            <label for="fem"><input type="radio" id="fem" value="fem" name="gender"> Fem.</label>
+
+            <hr>
+
+            <p>Which is your favorite retro genre?</p>
+            <label for="action"><input id="action" type="checkbox" value="action">Action</label>
+            <label for="rpg"><input  id="rpg" type="checkbox" value="rpg">RPG</label>
+            <label for="fight"><input id="fight" type="checkbox" value="fight">Fight</label>
+            <label for="beatemup"><input id="beatemup" type="checkbox" value="beatemup">Beat 'em up</label>
+            <label for="platformer"><input id="platformer" type="checkbox" value="platformer">Platformer</label>
+            
+            <p>Select your favorite retro console of the list:</p>
+            <select>
+                <option disabled selected value>Select your console</option>
+                <option>NES</option>
+                <option>SNES</option>
+                <option>SEGA</option>
+                <option>Playstation</option>
+            </select>
+            <p>If you want, tell to the people how was your first close up with the videogame's world:</p>
+            <textarea placeholder="Enter your memory..."></textarea>
+            <h6><sup>(*)</sup> fields are obligatory.</h6>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <footer class="transparent-background">
+        <p>The <a href="https://unsplash.com/photos/zpxKdH_xNSI" target="_blank">background image</a> is property of <a href="https://unsplash.com/@ben_neale" target="_blank">Ben Neale</a></p>
+        <h6>Designed by <strong><a href="https://github.com/BnVent">Brandon Venturino</a></strong></h6>
+    </footer>
+</body>
+</html>

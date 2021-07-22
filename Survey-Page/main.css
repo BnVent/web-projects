@@ -1,0 +1,148 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1957&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr{
+    width:75%;
+}
+
+#title{
+    margin-top: 25px;
+    text-align: center;
+    color:white;
+    font-family: "Tourney";
+    z-index:1;
+}
+
+#description{
+    color: white;
+    text-align: center;
+}
+
+form{
+    border-color: rgb(100, 74, 141);;
+    border-style: solid;
+    border-width:1px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin:50px;
+    padding:20px;
+    background-color: rgb(35, 0, 90);
+    opacity: 95%;
+    border-radius: 10px;
+}
+
+form p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom:5px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input[type=text], input[type="email"], input[type="number"]{
+    padding: 5px;
+    width: 100%;
+    left: auto;
+    right: auto;
+    height:30px;
+    border-radius: 5px;
+
+}
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    padding: 50px;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    margin-right: 7px;
+}
+
+select{
+    height:35px;
+    margin-bottom: 15px;
+}
+
+textarea{
+    resize: vertical;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+}
+
+button[type=submit]{
+    color: white;
+    font-size: 20px;
+    background-color: rgb(136, 83, 221);
+    border-color:rgb(54, 0, 141);
+    margin: 0px;
+    height: 50px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+button[type=submit]:hover{
+    background-color: rgb(160, 112, 236);
+    transform: scale(1.02);
+}
+
+footer{
+    color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around    ;
+    align-items: center;
+}
+
+footer:hover{
+    background-color: rgba(255, 255, 255, 2%);
+}
+
+footer p{
+    font-size: 14px;
+}
+
+a, a:visited{
+    color: rgb(190, 80, 98);
+}
+
+@media(max-width:950px){
+    #container{
+    width: 100%;
+    max-width:900px;
+    }
+}
+
+@media(max-width:500px){
+    #title{
+        font-size: 45px;
+      }
+    #container{
+        width: 100%;
+        max-width:475px;
+    }
+    #form{margin:auto}
+
+    footer{
+        margin-top:25px;
+        flex-direction:column;
+    }
+}
