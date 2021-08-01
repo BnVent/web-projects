@@ -1,0 +1,384 @@
+*{
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("media/background.jpg");
+    background: no-repeat center cover;
+    background-attachment: fixed;
+    color:white;
+}
+
+#container{
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(0, 0, 0, 90%);
+}
+
+header{
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/19/21/05/bass-guitar-1841186_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height:150px;
+}
+
+/*******************************
+Nav-bar
+*******************************/
+
+nav{
+    position:sticky;
+    z-index: 5;
+    top:0px;
+    background-color: black;
+    border: solid white 1px;
+    border-left: none;
+    border-right: none;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+}
+
+nav a:hover{text-decoration: underline;}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li{
+    width:100%;
+    text-align: center;
+}
+
+/*******************************
+General selectors
+*******************************/
+
+
+h1{
+    font-family: "Bebas Neue", cursive;
+    padding:40px;
+    text-shadow: 3px 3px black;
+}
+
+h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center; 
+}
+
+hr{
+    border: 1px rgba(255, 255, 255, 25%) solid;
+    width:75%;
+    margin: 25px auto 25px auto;
+}
+
+/*******************************
+Features section
+*******************************/
+
+#features{
+    position:relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: minmax(50px, 100px);
+    grid-auto-rows: minmax(50px, auto);
+    margin:10px 25px 25px 25px;
+    border-radius:10px;
+    background-color: rgba(255, 255, 255, 90%);
+    color:black;
+    padding:25px;
+}
+
+#features p{
+    margin-top:45px;
+    margin-left: 25px;
+    margin-bottom:40px;
+    line-height: 20px;
+    font-size:14px;
+    font-family: Tahoma, sans-serif;
+}
+
+#features h3{
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+    margin-left: 25px;
+}
+
+.icon{
+    float:left;
+    margin-right:10px;
+    height:50px;
+    width:50px;
+}
+
+.item-block{
+    margin-top:25px;
+    margin-left:25px;
+}
+
+#melody-vector{
+    position:absolute;
+    right:-5px;
+    bottom:5px;
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/30/10/51/silhouette-3275055_1280.png');
+    background-size: cover;
+    opacity:25%;
+    height:95px;
+    width:150px;
+}
+
+/*******************************
+Pricing section
+*******************************/
+
+#pricing{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.model{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#313131, #000000);
+    color:white;
+    text-align:center;
+    margin-left: 25px;
+    margin-right:25px;
+    max-height: 500px;
+    width:350px;
+    max-width: 33%;
+    border: white 1px solid;
+    padding:25px;
+}
+
+.model img{
+    max-width: 100%;
+    max-height: 75%;
+    height: auto;
+    box-sizing: content-box;
+    border: solid 1px black;
+    margin: auto;
+}
+
+#img3{
+    background-color:white;
+}
+
+.model button{
+    margin-top:10px;
+    width:100%;
+    height:25px;
+    border-radius: 0;
+}
+
+/*******************************
+Contact section
+*******************************/
+
+#contact
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:75%;
+    margin: 0px auto 0px auto;
+}
+
+#contact legend{margin-left: 25px;}
+
+#contact form{
+    margin-left:25px;
+    margin-right:25px;
+}
+
+#contact input[type='text']{
+    width:250px;
+    height:20px;
+    padding:10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+#contact input[type='email']{
+    width:250px;
+    height:20px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+#contact textarea{
+    height: 150px;
+    width: 400px;
+    resize: vertical;
+    padding:10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:15px;
+}
+
+#contact button{
+    margin-top:15px;
+    margin-bottom:15px;
+
+    align-self:center;
+    height:40px;
+    border-radius:0px;
+    width:25%;
+}
+
+#contact p{
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+/*******************************
+Social-media section
+*******************************/
+
+#social-media ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#social-media li{
+    padding: 15px;
+}
+#social-media img{
+    width:50px;
+    height:50px;
+    background-color: white;
+    border-radius: 100%;
+
+}
+
+#social-media img:hover{
+    animation-name: moveUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+    100%{
+        transform: translateY(-10px);
+        animation-duration: infinite;
+    }
+}
+
+/*******************************
+Footer and references section
+*******************************/
+
+footer{
+    bottom:0;
+    padding:25px;
+    text-align:center;
+
+}
+
+#github-icon{
+    background-color: white;
+    background-image: url(https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:50px;
+    border: solid black 2px;
+    height:50px;
+    width:100px;
+    margin: 25px auto 0px auto;
+    box-shadow:0px 2px darkgray;
+}
+
+#github-icon:hover{
+    cursor: pointer;
+}
+
+#github-icon:active{
+    transform: translateY(2px);
+    box-shadow: 0px 0px white;
+}
+
+/*******************************
+Responsive specifications
+*******************************/
+
+@media(max-width:800px) {
+
+    #container{
+        width:100%;
+    }
+
+    #features p{
+        font-size: 15px;
+        margin-left:10px;
+        margin-bottom:0px;
+
+    }
+
+    #melody-vector{
+        padding:95px;
+        opacity:12%;
+    }
+
+    #features{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-columns: minmax(50px, 100px);
+        grid-auto-rows: minmax(50px, auto);
+    }
+
+}
+
+@media(max-width:550px) {
+
+    #pricing{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #features p{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .model{
+        width:auto;
+        margin-top:25px;
+        max-width: 95%;
+    }
+
+
+    .model img{max-width: 75%;margin-top:15px;}
+
+    #contact, #contact fieldset{width:95%;}
+
+    #contact button{width: 100%;}
+
+    #contact input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #contact input[type='text'], #contact input[type='email'], #contact textarea{
+        width:100%;
+        height: auto;
+        box-sizing:border-box
+    }
+}
