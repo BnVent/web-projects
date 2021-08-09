@@ -1,2 +1,5 @@
 *.md
+*.odg
+*.odg#
+/Aprendizaje
 todo
