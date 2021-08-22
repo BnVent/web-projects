@@ -29,7 +29,7 @@
                 </a></li>
         </ul>
     </div>
-        <div onclick="toggleMenu()" id="toggle-button"></div>
+        <div id="toggle-button"></div>
     </nav>
 
     <!--HEADER-->
@@ -38,16 +38,24 @@
         <div id="header-layer">
             <img id="profile-img" src="media/profile.jpg" alt="">
             <p id="presentation">Hi, I'm Brandon Venturino</p>
-            <button id="cv-button">See the full CV</button>
+            <button id="cv-button">📝 See the full CV</button>
         </div>
     </header>
+    <div id="cv-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <iframe src="cv.html" width="100%" frameborder="0"></iframe>
+
+        </div>
+      
+      </div>
 
     <!--MAIN-->
     <main>
 
         <!--ABOUT ME SECTION -->
         <section id="aboutme-scroll">
-            <h2># About Me</h2>
+            <h2>About Me</h2>
             <div id="aboutme-section">
                 <div class="block">
                     <span class="icon iperson"></span>
@@ -79,27 +87,61 @@
         
         <!--TECH DOMAIN SECTION-->
         <section id="techdomain-scroll">
-            <h2># Technologies domain</h2>
+            <h2>Technologies domain</h2>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>HTML DOMAIN</h3>
+                  <hr>
+                  <ul>
+                      <li>Web pages creation with modern and semantically correct HTML5 tags. </li>
+                      <li>Knowledge of the accessibilities issues in the Web design.</li>
+                      <li>Correct application of the specific technics for the Search Engine Optimization (SEO).</li>
+                      <li>Experience in the realization of different types of professional web pages.</li>
+                      <li>Ability with Canvas and SVG technologies.</li>
+                  </ul>
+                </div>
+              
+              </div>
             <div id="techdomain-section">
 
-                    <img id="html-tech" src="media/icons/html5-original.svg" alt="">
+                    <div class="tech-box">
+                        <img id="html-tech" src="media/icons/html5-original.svg" alt="">
+                        <button id="myBtn">Show criteria (+)</button>
+                    </div>
 
-                    <img id="css-tech" src="media/icons/css3-original.svg" alt="">
+                    <div class="tech-box">
+                        <img id="css-tech" src="media/icons/css3-original.svg" alt="">
+                        <button>Show criteria (+)</button>
+                    </div>
 
-                    <img id="javascript-tech" src="media/icons/javascript-original.svg" alt="">
+                    <div class="tech-box">
+                        <img id="javascript-tech" src="media/icons/javascript-original.svg" alt="">
+                        <p>In process...</p>
+                    </div>
 
-                    <img id="vuejs-tech" src="media/icons/vuejs-original.svg" alt="">
+                    <div class="tech-box">
+                        <img id="vuejs-tech" src="media/icons/vuejs-original.svg" alt="">
+                        <p>In process...</p>
+                    </div>
 
-                    <img id="react-tech" src="media/icons/react-original.svg" alt="">
+                    <div class="tech-box">
+                        <img id="react-tech" src="media/icons/react-original.svg" alt="">
+                        <p>In process...</p>
+                    </div>
+                    
 
-                    <img id="nodejs-tech" src="media/icons/nodejs-original.svg" alt="">
+                    <div class="tech-box">
+                        <img id="nodejs-tech" src="media/icons/nodejs-original.svg" alt="">
+                        <p>In process...</p>
+                    </div>
 
             </div>
         </section>
 
         <!--PROJECTS SECTION-->
         <section id="projects-scroll">
-            <h2># Projects</h2>
+            <h2>Projects</h2>
 
             <div id="tag-section">
                 <h3>Tags</h3>
@@ -120,7 +162,7 @@
             </div>
         </section>
         <section id="contact-scroll">
-            <h2># Contact</h2>
+            <h2>Contact</h2>
             <div id="form-background-one">
                 <div id="form-background-two">
             <div id="contact-section">
@@ -141,12 +183,7 @@
         </section>
     </main>
     <footer>
-        <div id="footer-div">
-            <p><strong>Clarification</strong>: this portfolio page is a basic version made with the aim of completing the FCC (Free Code Camp) projects. An improved version will then be uploaded to the Internet, with more javascript code and design details.</p>
-
         <h6>Designed by <strong>Brandon Venturino</strong></h6>
-        </div>
-
     </footer>
     <script src="script.js" type="text/javascript"></script>
 </body>

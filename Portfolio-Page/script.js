@@ -1,7 +1,13 @@
-
 var toggleOn = true;
 var toggleButton = document.getElementById("toggle-button");
 var prevScrollpos = window.pageYOffset;
+var x = document.getElementById("toggle");
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+var cvBtn = document.getElementById("cv-button");
+var cvModal = document.getElementById("cv-modal");
+
 
 if(window.innerWidth<=835)
 {
@@ -25,9 +31,8 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 } 
 
-function toggleMenu()
-{
-  var x = document.getElementById("toggle");
+toggleButton.onclick = function(){
+
   if(x.style.display == "block")
   {
     x.style.display = "none";
@@ -37,12 +42,26 @@ function toggleMenu()
   }
 }
 
-function toggleNight()
-{
-  
-  document.getElementById("form-background-one").style.backgroundImage = "url('media/Fondo1-dia.svg')";
 
-  document.getElementById("form-background-two").style.backgroundImage = "url('media/Fondo2-dia.svg')";
+cvBtn.onclick = function (){
+  cvModal.style.display = "block";
+}
 
-  document.getElementById("contact-section").style.backgroundImage = "none";
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+  cvModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+  if (event.target == cvModal)
+  {
+    cvModal.style.display = "none";
+  }
 }

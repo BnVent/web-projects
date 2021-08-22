@@ -49,3 +49,49 @@ function ocultar()
   }
 
 }
+
+
+var buttonEntrenamiento = document.getElementById("b-entrenamiento-funcional");
+
+let buttonPlan = document.getElementById("b-plan");
+
+let buttonVenta = document.getElementById("b-venta");
+
+let banner = document.getElementById("main-banner");
+
+
+buttonEntrenamiento.onclick = function(){
+  let titulo = document.createElement('h2');
+  titulo.textContent = "ENTRENAMIENTO FUNCIONAL";
+
+  banner.appendChild(document.createElement('p'));
+
+
+  banner.appendChild(titulo);
+
+
+}
+
+/*
+let button = document.getElementById("videos-grid");
+
+button.addEventListener('mouseover', () => {
+  if(event)
+  {
+    document.getElementsByClassName('insta-cover')[0].style.display = "block";
+  }
+  else
+  {
+    document.getElementsByClassName('insta-cover')[0].style.display = "none";
+  }
+  
+})
+*/
+
+
+let grid = document.getElementById('videos-grid');
+
+function desplazar()
+{
+  grid.scrollLeft += 300;
+}
